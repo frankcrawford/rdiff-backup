@@ -13,7 +13,7 @@ rdiff-backup examples
 -   [Getting information about the backup directory](#query)
 -   [Miscellaneous other commands](#misc)
 
-### [Backing up]{#backup}
+### [Backing up][#backup]
 
 -   Simplest case\-\--backup local directory `foo` to local directory
     `bar`. `bar` will end up a copy of `foo`, except it will contain the
@@ -47,7 +47,7 @@ rdiff-backup examples
 
     > `rdiff-backup -v5 --print-statistics user1@host1::/source-dir user2@host2::/dest-dir`
 
-### [Restoring]{#restore}
+### [Restoring][#restore]
 
 -   Suppose earlier we have run `rdiff-backup foo bar`, with both foo
     and bar local. We accidentally deleted `foo/dir` and now want to
@@ -96,7 +96,7 @@ rdiff-backup examples
     increment file and thus enter restore mode. Above the restored
     version is written to `local-dir/file`.
 
-### [Deleting older files]{#delete_older}
+### [Deleting older files][#delete_older]
 
 Although rdiff-backup tries to save space by only storing file
 differences, eventually space may run out in the destination directory.
@@ -123,7 +123,7 @@ if the hostname were omitted.
 
     > `rdiff-backup --remove-older-than 20B host.net::/remote-dir`
 
-### [File selection with include/exclude options]{#exclude}
+### [File selection with include/exclude options][#exclude]
 
 Sometimes you don\'t want to back up all files. The various `--include`
 and `--exclude` options can be used to select exactly which files to
@@ -204,7 +204,7 @@ definitions.
     `**txt` would be considered the name of a file, not a globbing
     string.
 
-### [Getting information about the backup directory]{#query}
+### [Getting information about the backup directory][#query]
 
 The following examples assume that you have run
 `rdiff-backup in-dir out-dir` in the past.
@@ -243,7 +243,7 @@ The following examples assume that you have run
 
     > `rdiff-backup --calculate-average out-dir/rdiff-backup-data/session_statistics*`
 
-### [Miscellaneous other commands]{#misc}
+### [Miscellaneous other commands][#misc]
 
 -   If you are having problems connecting to a remote host, the
     `--test-server` command may be useful. This command simply verifies
