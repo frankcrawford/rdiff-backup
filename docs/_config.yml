@@ -1,7 +1,3 @@
-title: rdiff-backup
-description: Reverse differential backup tool, over a network or locally.
-show_downloads: true
-google_analytics:
 theme: jekyll-theme-tactile
 plugins:
   - jekyll-relative-links
